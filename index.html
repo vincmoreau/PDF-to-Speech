@@ -518,20 +518,41 @@
 
   const VOICES = {
     fr: [
-      { label: 'Wavenet A (F)', name: 'fr-FR-Wavenet-A', lang: 'fr-FR' },
-      { label: 'Wavenet B (M)', name: 'fr-FR-Wavenet-B', lang: 'fr-FR' },
-      { label: 'Wavenet C (F)', name: 'fr-FR-Wavenet-C', lang: 'fr-FR' },
-      { label: 'Wavenet D (M)', name: 'fr-FR-Wavenet-D', lang: 'fr-FR' },
-      { label: 'Standard A (F)', name: 'fr-FR-Standard-A', lang: 'fr-FR' },
-      { label: 'Standard B (M)', name: 'fr-FR-Standard-B', lang: 'fr-FR' },
+      // ── Chirp 3 HD (meilleure qualité) ──
+      { label: '★ Chirp3 HD — Aoede (F)', name: 'fr-FR-Chirp3-HD-Aoede', lang: 'fr-FR', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Kore (F)',  name: 'fr-FR-Chirp3-HD-Kore',  lang: 'fr-FR', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Leda (F)',  name: 'fr-FR-Chirp3-HD-Leda',  lang: 'fr-FR', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Zephyr (F)',name: 'fr-FR-Chirp3-HD-Zephyr',lang: 'fr-FR', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Charon (M)',name: 'fr-FR-Chirp3-HD-Charon',lang: 'fr-FR', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Fenrir (M)',name: 'fr-FR-Chirp3-HD-Fenrir',lang: 'fr-FR', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Orus (M)',  name: 'fr-FR-Chirp3-HD-Orus',  lang: 'fr-FR', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Puck (M)',  name: 'fr-FR-Chirp3-HD-Puck',  lang: 'fr-FR', group: 'Chirp 3 HD' },
+      // ── WaveNet (qualité haute, quota gratuit plus large) ──
+      { label: 'Wavenet A (F)', name: 'fr-FR-Wavenet-A', lang: 'fr-FR', group: 'WaveNet' },
+      { label: 'Wavenet B (M)', name: 'fr-FR-Wavenet-B', lang: 'fr-FR', group: 'WaveNet' },
+      { label: 'Wavenet C (F)', name: 'fr-FR-Wavenet-C', lang: 'fr-FR', group: 'WaveNet' },
+      { label: 'Wavenet D (M)', name: 'fr-FR-Wavenet-D', lang: 'fr-FR', group: 'WaveNet' },
+      // ── Standard (quota gratuit maximal) ──
+      { label: 'Standard A (F)', name: 'fr-FR-Standard-A', lang: 'fr-FR', group: 'Standard' },
+      { label: 'Standard B (M)', name: 'fr-FR-Standard-B', lang: 'fr-FR', group: 'Standard' },
     ],
     en: [
-      { label: 'Wavenet A (M)', name: 'en-GB-Wavenet-A', lang: 'en-GB' },
-      { label: 'Wavenet B (M)', name: 'en-GB-Wavenet-B', lang: 'en-GB' },
-      { label: 'Wavenet C (F)', name: 'en-GB-Wavenet-C', lang: 'en-GB' },
-      { label: 'Standard A (F)', name: 'en-US-Standard-A', lang: 'en-US' },
-      { label: 'Standard B (M)', name: 'en-US-Standard-B', lang: 'en-US' },
-      { label: 'Wavenet F (F) US', name: 'en-US-Wavenet-F', lang: 'en-US' },
+      // ── Chirp 3 HD (meilleure qualité) ──
+      { label: '★ Chirp3 HD — Aoede (F)', name: 'en-US-Chirp3-HD-Aoede', lang: 'en-US', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Kore (F)',  name: 'en-US-Chirp3-HD-Kore',  lang: 'en-US', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Leda (F)',  name: 'en-US-Chirp3-HD-Leda',  lang: 'en-US', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Zephyr (F)',name: 'en-US-Chirp3-HD-Zephyr',lang: 'en-US', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Charon (M)',name: 'en-US-Chirp3-HD-Charon',lang: 'en-US', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Fenrir (M)',name: 'en-US-Chirp3-HD-Fenrir',lang: 'en-US', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Orus (M)',  name: 'en-US-Chirp3-HD-Orus',  lang: 'en-US', group: 'Chirp 3 HD' },
+      { label: '★ Chirp3 HD — Puck (M)',  name: 'en-US-Chirp3-HD-Puck',  lang: 'en-US', group: 'Chirp 3 HD' },
+      // ── WaveNet ──
+      { label: 'Wavenet A (M) GB', name: 'en-GB-Wavenet-A', lang: 'en-GB', group: 'WaveNet' },
+      { label: 'Wavenet C (F) GB', name: 'en-GB-Wavenet-C', lang: 'en-GB', group: 'WaveNet' },
+      { label: 'Wavenet F (F) US', name: 'en-US-Wavenet-F', lang: 'en-US', group: 'WaveNet' },
+      // ── Standard ──
+      { label: 'Standard A (F) US', name: 'en-US-Standard-A', lang: 'en-US', group: 'Standard' },
+      { label: 'Standard B (M) US', name: 'en-US-Standard-B', lang: 'en-US', group: 'Standard' },
     ],
   };
 
@@ -603,11 +624,21 @@
   function buildVoiceList() {
     const lang = langSelect.value;
     voiceSelect.innerHTML = '';
+    const groups = {};
     VOICES[lang].forEach(v => {
-      const o = document.createElement('option');
-      o.value = JSON.stringify(v);
-      o.textContent = v.label;
-      voiceSelect.appendChild(o);
+      if (!groups[v.group]) groups[v.group] = [];
+      groups[v.group].push(v);
+    });
+    Object.entries(groups).forEach(([groupName, voices]) => {
+      const og = document.createElement('optgroup');
+      og.label = groupName;
+      voices.forEach(v => {
+        const o = document.createElement('option');
+        o.value = JSON.stringify(v);
+        o.textContent = v.label;
+        og.appendChild(o);
+      });
+      voiceSelect.appendChild(og);
     });
   }
   langSelect.onchange = buildVoiceList;
